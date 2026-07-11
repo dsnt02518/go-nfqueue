@@ -165,8 +165,7 @@ const (
 )
 
 // NfQeueue is a deprecated incorrect spelling of NfQueue.
-// This is only present to prevent breaking compatibility.
-// see https://github.com/florianl/go-nfqueue/issues/112
+// Deprecated: Please migrate to NfQueue.
 const NfQeueue = NfQueue
 
 // conntrack attributes
