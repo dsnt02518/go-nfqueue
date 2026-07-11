@@ -160,9 +160,14 @@ const (
 	NfDrop = iota
 	NfAccept
 	NfStolen
-	NfQeueue
+	NfQueue
 	NfRepeat
 )
+
+// NfQeueue is a deprecated incorrect spelling of NfQueue.
+// This is only present to prevent breaking compatibility.
+// see https://github.com/florianl/go-nfqueue/issues/112
+const NfQeueue = NfQueue
 
 // conntrack attributes
 // include/uapi/linux/netfilter/nfnetlink_conntrack.h
